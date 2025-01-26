@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predição usando Terraform</title>
+    <style>
+        color: blue;
+
+    </style>
+</head>
+<body>
+
+
+    background-color: $off-white;
+    color: $black;
+    font-family: $sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2.5vh 10vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    <div style="text-align: center;">
+        <h1>Churn Model</h1>
+        <h2>Um banco conhecido tem observado muitos clientes fechando suas contas ou mudando para bancos concorrentes nos últimos trimestres. Isso causou um grande impacto em suas receitas trimestrais e pode afetar drasticamente as receitas anuais do ano financeiro em andamento, fazendo com que as ações despenquem e o valor de mercado diminua significativamente. A ideia é conseguir prever quais clientes vão se desligar para que as ações/intervenções necessárias possam ser tomadas pelo banco para reter esses clientes. Neste projeto de previsão de rotatividade de aprendizado de máquina, recebemos dados do cliente referentes às suas transações anteriores com o banco e algumas informações demográficas.
+        </h2>
+
+        <style>
+            h1 {
+            font-weight: bold
+            font-size: 70px;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+
+        </style>
+
+        <form action="/predict" method="post">
+
+            <label for="fname">CreditScore:</label><br>
+            <input type="text" name="feature1" value="300" required="required"><br>
+
+            <label for="fname">Age:</label><br>
+            <input type="text" name="feature2" value="25" required="required"><br>
+
+            <label for="fname">Tenure:</label><br>
+            <input type="text" name="feature3" value="5" required="required"><br>
+
+            <label for="fname">Balance:</label><br>
+            <input type="text" name="feature4" value="250" required="required"><br>
+
+            <label for="fname">NumOfProducts:</label><br>
+            <input type="text" name="feature5" value="5" required="required"><br>
+
+            <label for="fname">EstimatedSalary:</label><br>
+            <input type="text" name="feature6" value="4000" required="required"><br>
+
+            <button class="favorite styled" type="submit">OK</button>
+        </form>
+
+        {% if prediction_text %}
+            <h3>{{ prediction_text }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
