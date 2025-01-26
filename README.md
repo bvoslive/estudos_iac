@@ -1,7 +1,9 @@
 # Projeto de Previsão de Churn com Terraform e AWS
 
 ## Descrição
-Este projeto utiliza o Terraform para provisionar uma infraestrutura na AWS que suporta um sistema de previsão de churn. A ideia é conseguir prever quais clientes vão se desligar para que as ações necessárias possam ser tomadas para reter esses clientes.
+Situação fictícia: Um banco conhecido tem observado muitos clientes fechando suas contas ou mudando para bancos concorrentes nos últimos trimestres. Isso causou um grande impacto em suas receitas trimestrais e pode afetar drasticamente as receitas anuais do ano financeiro em andamento, fazendo com que as ações despenquem e o valor de mercado diminua significativamente.
+
+Este projeto utiliza o Terraform para provisionar uma infraestrutura na AWS que suporta um sistema de previsão de churn. A ideia é conseguir prever quais clientes vão se desligar, com dados referentes às suas transações anteriores com o banco e algumas informações demográficas, para que as ações necessárias possam ser tomadas para reter esses clientes.
 
 ## Estrutura do Projeto
 
